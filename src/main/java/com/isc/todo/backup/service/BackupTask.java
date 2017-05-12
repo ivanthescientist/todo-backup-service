@@ -4,7 +4,6 @@ import com.isc.todo.backup.contract.BackupStatus;
 import com.isc.todo.backup.contract.TodoBackupDTO;
 import com.isc.todo.backup.contract.TodoDTO;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 

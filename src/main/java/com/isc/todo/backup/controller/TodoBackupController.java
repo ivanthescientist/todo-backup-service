@@ -44,9 +44,9 @@ public class TodoBackupController {
 
         switch (backup.getStatus()) {
             case FAILED:
-                throw new BackupInProgressException(backupId);
-            case IN_PROGRESS:
                 throw new NoBackupDataFoundException(backupId);
+            case IN_PROGRESS:
+                throw new BackupInProgressException(backupId);
         }
 
         String body = dataSerializer.serialize(backup.getPayload());
@@ -69,6 +69,6 @@ public class TodoBackupController {
     public void backupNotFoundException() {}
 
     @ExceptionHandler(NoBackupDataFoundException.class)
-    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
     public void noBackupDataFoundException() {}
 }
