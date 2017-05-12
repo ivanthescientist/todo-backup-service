@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "username": "user1",
+        "email": "user1@user",
+        "todos": [
+            {
+                "subject": "u1-todo1",
+                "dueDate": "2018-01-01 10:00:00",
+                "done": true
+            },
+            {
+                "subject": "u1-todo2",
+                "dueDate": "2018-01-01 10:00:00",
+                "done": false
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "username": "user2",
+        "email": "user2@user",
+        "todos": [
+            {
+                "subject": "u2-todo1",
+                "dueDate": "2018-01-01 10:00:00",
+                "done": true
+            },
+            {
+                "subject": "u2-todo2",
+                "dueDate": "2018-01-01 10:00:00",
+                "done": false
+            },
+            {
+                "subject": "u2-todo3",
+                "dueDate": "2018-01-01 10:00:00",
+                "done": false
+            }
+        ]
+    }
+]
